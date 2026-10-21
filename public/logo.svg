@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <!-- Top Text Path -->
+    <path id="topCurve" d="M 175 400 A 225 225 0 0 1 625 400" fill="none" />
+    <!-- Bottom Text Path -->
+    <path id="bottomCurve" d="M 625 400 A 225 225 0 0 1 175 400" fill="none" />
+    
+    <filter id="subtleDistress">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- Background circle (clean cream/white) -->
+  <circle cx="400" cy="400" r="395" fill="#FAF7F2" />
+
+  <!-- Outer distressed ring -->
+  <circle cx="400" cy="400" r="380" fill="none" stroke="#3E2723" stroke-width="6" stroke-dasharray="12 4 4 4 18 3" opacity="0.9" />
+  <circle cx="400" cy="400" r="370" fill="none" stroke="#3E2723" stroke-width="3" />
+
+  <!-- Main Espresso Ring -->
+  <circle cx="400" cy="400" r="350" fill="#361E16" stroke="#25120B" stroke-width="8" />
+
+  <!-- Inner Cream Center -->
+  <circle cx="400" cy="400" r="235" fill="#FFFFFF" stroke="#25120B" stroke-width="7" />
+
+  <!-- Inner fine accent ring -->
+  <circle cx="400" cy="400" r="226" fill="none" stroke="#3E2723" stroke-width="2" opacity="0.5" />
+
+  <!-- Top Curved Text: GUWAHATI -->
+  <text fill="#FAF7F2" font-family="'Playfair Display', 'Times New Roman', Georgia, serif" font-size="58" font-weight="900" letter-spacing="9">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
+      GUWAHATI
+    </textPath>
+  </text>
+
+  <!-- Bottom Curved Text: COFFEE HOUSE -->
+  <text fill="#FAF7F2" font-family="'Playfair Display', 'Times New Roman', Georgia, serif" font-size="52" font-weight="900" letter-spacing="8">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      COFFEE HOUSE
+    </textPath>
+  </text>
+
+  <!-- Middle Banner Section -->
+  <!-- EST text on left -->
+  <text x="245" y="415" text-anchor="middle" fill="#361E16" font-family="'Playfair Display', 'Times New Roman', Georgia, serif" font-size="44" font-weight="900" letter-spacing="4">EST</text>
+
+  <!-- 2025 text on right -->
+  <text x="555" y="415" text-anchor="middle" fill="#361E16" font-family="'Playfair Display', 'Times New Roman', Georgia, serif" font-size="44" font-weight="900" letter-spacing="4">2025</text>
+
+  <!-- Decorative separation stars/dots on the espresso ring -->
+  <circle cx="165" cy="400" r="7" fill="#E8D8C8" />
+  <circle cx="635" cy="400" r="7" fill="#E8D8C8" />
+
+  <!-- Center Coffee Cup & Steam -->
+  <!-- Saucer -->
+  <path d="M 320 480 C 350 515 450 515 480 480 C 460 495 340 495 320 480 Z" fill="#361E16" />
+
+  <!-- Cup Handle -->
+  <path d="M 450 405 C 510 400 520 460 445 470 C 475 465 485 415 440 420 Z" fill="#361E16" />
+
+  <!-- Cup Body -->
+  <path d="M 330 380 C 330 465 370 485 400 485 C 430 485 470 465 470 380 C 470 380 400 395 330 380 Z" fill="#361E16" />
+  
+  <!-- Cup Rim highlight / Coffee surface inside -->
+  <ellipse cx="400" cy="385" rx="65" ry="18" fill="#F4EFE8" stroke="#361E16" stroke-width="4" />
+  <ellipse cx="400" cy="386" rx="55" ry="13" fill="#361E16" opacity="0.3" />
+  <!-- Swirl highlight on cup body -->
+  <path d="M 360 460 C 400 465 440 435 445 415 C 440 430 390 455 360 460 Z" fill="#FFFFFF" opacity="0.9" />
+
+  <!-- Rising Steam Plumes (3 organic curved flames/wisps) -->
+  <!-- Center tall steam plume -->
+  <path d="M 400 360 C 375 320 430 290 385 240 C 420 280 375 310 405 340 C 410 346 405 355 400 360 Z" fill="#8D5B3A" />
+  <!-- Left steam plume -->
+  <path d="M 370 345 C 350 310 385 285 365 255 C 385 280 355 310 375 335 Z" fill="#A66E43" opacity="0.9" />
+  <!-- Right steam plume -->
+  <path d="M 425 345 C 445 310 415 285 435 255 C 415 280 445 310 425 335 Z" fill="#7A482A" opacity="0.95" />
+</svg>
