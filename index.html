@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guwahati Coffee House | Cozy Specialty Cafe on VIP Road, Guwahati</title>
+  <meta name="description" content="Your quiet escape on VIP Road, Guwahati. Exceptional specialty coffee, melt-in-your-mouth cheesecakes, and a cozy corner just for you in Assam." />
+  <meta name="keywords" content="Guwahati Coffee House, cafe in Guwahati, VIP Road cafe, Vietnamese coffee Guwahati, specialty coffee Assam, best cafe Guwahati, Pathquary cafe" />
+  <meta name="author" content="Guwahati Coffee House" />
+  <meta name="theme-color" content="#f4efe8" />
+
+  <!-- Canonical & Social Meta -->
+  <link rel="canonical" href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9" />
+  <meta property="og:type" content="restaurant.cafe" />
+  <meta property="og:title" content="Guwahati Coffee House | Your Quiet Escape on VIP Road" />
+  <meta property="og:description" content="Exceptional specialty coffee, melt-in-your-mouth cheesecakes, and a cozy corner just for you in Guwahati." />
+  <meta property="og:image" content="logo.jpg" />
+  <meta property="og:site_name" content="Guwahati Coffee House" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Guwahati Coffee House | Cozy Specialty Cafe on VIP Road" />
+  <meta name="twitter:description" content="Exceptional specialty coffee, melt-in-your-mouth cheesecakes, and a cozy corner just for you in Guwahati." />
+  <meta name="twitter:image" content="logo.jpg" />
+
+  <!-- Google Fonts: Playfair Display & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation Library via CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#3e2723',
+            latte: '#f4efe8',
+            warmcream: '#faf6f0',
+            creamborder: '#e6ded4',
+            caramel: '#8d5b3a',
+            dimespresso: '#2a160f',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Outfit"', 'Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Scrollbar, Selection, and Keyframe Animations -->
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f4efe8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3e2723;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2a160f;
+    }
+
+    /* Custom Selection */
+    ::selection {
+      background-color: #3e2723;
+      color: #f4efe8;
+    }
+
+    /* Floating bean animation */
+    @keyframes floatUpBean {
+      0% {
+        opacity: 0.95;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(var(--x-shift), var(--y-shift)) scale(0.6) rotate(var(--rot));
+      }
+    }
+
+    .coffee-bean-particle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      animation: floatUpBean 1000ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      border-radius: 9999px;
+      background-color: #3e2723;
+      box-shadow: 0 2px 5px rgba(62, 39, 35, 0.3);
+    }
+
+    /* Subtle steam wave effect */
+    @keyframes gentleSteam {
+      0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.7; }
+      50% { transform: translateY(-6px) scaleY(1.08); opacity: 0.95; }
+    }
+    .animate-steam {
+      animation: gentleSteam 3.5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Local Business Schema.org JSON-LD for Local SEO Funnel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Guwahati Coffee House",
+    "image": "logo.jpg",
+    "description": "A cozy, quiet haven on VIP Road, Guwahati serving specialty coffee, Vietnamese Cold Brew, and artisanal cheesecakes.",
+    "servesCuisine": ["Specialty Coffee", "Vietnamese Coffee", "Artisanal Bakery", "Cheesecakes"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "VIP Road, Near Pathquary",
+      "addressLocality": "Guwahati",
+      "addressRegion": "Assam",
+      "postalCode": "781171",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.1772,
+      "longitude": 91.8152
+    },
+    "hasMap": "https://maps.app.goo.gl/oXALNp7xKQLDp6JP9",
+    "url": "https://maps.app.goo.gl/oXALNp7xKQLDp6JP9",
+    "sameAs": [
+      "https://www.instagram.com/guwahaticoffeehouse"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "12:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "11:30",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "21:30"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-[#f4efe8] text-[#3e2723] font-sans antialiased selection:bg-[#3e2723] selection:text-[#f4efe8] relative overflow-x-hidden min-h-screen flex flex-col">
+
+  <!-- 1. The Artisanal Paper Texture (CSS Grain Overlay) -->
+  <div
+    class="fixed inset-0 pointer-events-none z-[90] opacity-[0.04]"
+    style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E&quot;);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- 3. The Minimalist Preloader -->
+  <div id="preloader" class="fixed inset-0 z-[100] bg-[#f4efe8] flex flex-col items-center justify-center transition-opacity duration-700">
+    <div class="relative flex flex-col items-center">
+      <div class="w-28 h-28 rounded-full p-1 bg-[#3e2723]/10 mb-5 shadow-2xl relative">
+        <img
+          src="logo.jpg"
+          alt="Guwahati Coffee House Logo"
+          class="w-full h-full object-cover rounded-full border-2 border-[#3e2723]/30 shadow-inner"
+        />
+        <span class="absolute inset-0 rounded-full border-2 border-[#3e2723] border-t-transparent animate-spin"></span>
+      </div>
+      <p class="font-serif text-[#3e2723] text-xl font-bold tracking-[0.25em] uppercase">Brewing...</p>
+      <p class="text-xs text-[#3e2723]/60 uppercase tracking-widest mt-2">Guwahati Coffee House • VIP Road</p>
+    </div>
+  </div>
+
+  <!-- 1. Header (Sticky & Minimalist) -->
+  <header class="sticky top-0 z-40 bg-[#f4efe8]/95 backdrop-blur-md border-b border-[#3e2723]/10 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <!-- Left: Location Tag / Sub-brand -->
+      <div class="flex items-center space-x-2">
+        <a href="#hero" class="flex items-center space-x-2 group">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-700 animate-pulse"></span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-[#3e2723]/80 group-hover:text-[#3e2723] transition-colors hidden sm:inline-block">VIP Road, Guwahati</span>
+        </a>
+      </div>
+
+      <!-- Center: Small & Elegant Logo -->
+      <a href="#hero" class="group flex items-center justify-center p-1 rounded-full transition-transform hover:scale-105 active:scale-95" aria-label="Guwahati Coffee House Home">
+        <img
+          src="logo.jpg"
+          alt="Guwahati Coffee House Logo"
+          class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-[#3e2723]/30 group-hover:border-[#3e2723] transition-all"
+        />
+      </a>
+
+      <!-- Right: Solid Espresso Brown Button "Find Us" -->
+      <div class="flex items-center space-x-3">
+        <a
+          href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-5 py-2.5 bg-[#3e2723] text-[#f4efe8] font-medium text-sm tracking-wide rounded-full shadow-md hover:bg-[#2a160f] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+        >
+          <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Find Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Flow -->
+  <main class="flex-grow">
+
+    <!-- 2. Hero Section (Warm & Inviting) -->
+    <section id="hero" class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 sm:px-6 overflow-hidden">
+      <!-- Decorative background glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#e6ded4]/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up" data-aos-duration="900">
+        
+        <!-- Welcome badge -->
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#3e2723]/5 border border-[#3e2723]/15 text-[#3e2723] text-xs font-semibold tracking-wider uppercase mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#3e2723]"></span>
+          <span>A Warm Corner in Assam</span>
+        </div>
+
+        <!-- Typography Heading -->
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#3e2723] leading-[1.15] mb-6">
+          Your Quiet Escape on <span class="italic font-serif font-normal underline decoration-[#3e2723]/30 decoration-wavy underline-offset-8">VIP Road.</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="text-lg sm:text-xl md:text-2xl text-[#3e2723]/85 font-normal max-w-2xl mx-auto leading-relaxed mb-8">
+          Exceptional specialty coffee, melt-in-your-mouth cheesecakes, and a cozy corner just for you in Guwahati.
+        </p>
+
+        <!-- Logistics Banners (Small pills below subtext) -->
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 text-xs sm:text-sm font-medium" data-aos="fade-up" data-aos-delay="150">
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/80 border border-[#3e2723]/15 shadow-sm text-[#3e2723]">
+            <span class="mr-1.5">📍</span> Near Pathquary
+          </div>
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/80 border border-[#3e2723]/15 shadow-sm text-[#3e2723]">
+            <span class="mr-1.5">☕</span> EST 2025
+          </div>
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/80 border border-[#3e2723]/15 shadow-sm text-[#3e2723]">
+            <span class="mr-1.5">🍽️</span> Dine-In & Takeaway
+          </div>
+        </div>
+
+        <!-- CTAs: "Get Directions" (Solid Espresso button) & Quick actions -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="250">
+          <a
+            href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#3e2723] text-[#f4efe8] font-semibold text-base tracking-wide rounded-2xl shadow-xl hover:bg-[#2a160f] hover:shadow-2xl hover:-translate-y-1 active:translate-y-0 transition-all duration-300 group"
+          >
+            <svg class="w-5 h-5 mr-2.5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Get Directions
+          </a>
+
+          <a
+            href="#menu"
+            class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 bg-white/60 hover:bg-white text-[#3e2723] font-semibold text-base rounded-2xl border border-[#3e2723]/20 shadow-sm hover:shadow-md transition-all duration-300"
+          >
+            View Menu Teaser
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick click hint -->
+        <p class="text-xs text-[#3e2723]/50 mt-6 tracking-wide italic">
+          💡 Click anywhere on screen to brew floating coffee beans
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 3. Our Story Section (Building Local Connection) -->
+    <section id="story" class="py-16 md:py-24 px-4 sm:px-6 relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-white/80 backdrop-blur-sm border border-[#3e2723]/10 rounded-3xl p-8 sm:p-12 md:p-16 shadow-lg relative overflow-hidden" data-aos="fade-up" data-aos-duration="900">
+          
+          <!-- Background subtle coffee badge watermark -->
+          <div class="absolute -right-12 -bottom-12 w-64 h-64 opacity-5 pointer-events-none">
+            <img src="logo.jpg" alt="" class="w-full h-full object-cover rounded-full" />
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left story content -->
+            <div class="lg:col-span-7">
+              <div class="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-widest text-[#3e2723]/70 mb-3">
+                <span>The Neighborhood Haven</span>
+                <span class="w-8 h-[1px] bg-[#3e2723]/30"></span>
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#3e2723] mb-6 tracking-tight">
+                Brewing Since 2025.
+              </h2>
+              <p class="text-base sm:text-lg text-[#3e2723]/80 leading-relaxed mb-6 font-normal">
+                Guwahati Coffee House was born out of a simple desire: to create a warm, quiet haven away from the hustle and bustle of the city. Whether you're catching up with friends, settling in with your laptop, or simply craving the perfect Vietnamese Cold Coffee, our doors are open. We believe in rich brews, soft music, and hospitality that feels like home.
+              </p>
+
+              <!-- Values Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-[#3e2723]/10">
+                <div class="p-3 rounded-xl bg-[#f4efe8]/60">
+                  <p class="font-serif text-xl font-bold text-[#3e2723]">100%</p>
+                  <p class="text-xs text-[#3e2723]/75 font-medium mt-0.5">Specialty Arabica & Robusta</p>
+                </div>
+                <div class="p-3 rounded-xl bg-[#f4efe8]/60">
+                  <p class="font-serif text-xl font-bold text-[#3e2723]">Cozy</p>
+                  <p class="text-xs text-[#3e2723]/75 font-medium mt-0.5">Work & Read Friendly</p>
+                </div>
+                <div class="p-3 rounded-xl bg-[#f4efe8]/60 col-span-2 sm:col-span-1">
+                  <p class="font-serif text-xl font-bold text-[#3e2723]">Fresh</p>
+                  <p class="text-xs text-[#3e2723]/75 font-medium mt-0.5">Bakes Prepared Daily</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right visual card -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-full max-w-sm rounded-2xl bg-[#3e2723] text-[#f4efe8] p-7 shadow-2xl flex flex-col justify-between overflow-hidden">
+                <!-- Decorative coffee bean circles -->
+                <div class="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-[#5a382c]/40 blur-xl"></div>
+                
+                <div class="relative z-10">
+                  <div class="flex items-center justify-between mb-6">
+                    <img src="logo.jpg" alt="Logo" class="w-12 h-12 rounded-full border border-white/20 shadow-md" />
+                    <span class="text-xs uppercase tracking-widest text-[#f4efe8]/70 border border-[#f4efe8]/20 px-3 py-1 rounded-full">Assam Crafted</span>
+                  </div>
+                  <h3 class="font-serif text-2xl font-bold mb-2">Our Promise</h3>
+                  <p class="text-sm text-[#f4efe8]/80 leading-relaxed mb-6">
+                    "Every cup is pulled with patience. Every slice is served with love. Slow down, take a sip, and stay awhile."
+                  </p>
+                </div>
+
+                <div class="relative z-10 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-[#f4efe8]/70">
+                  <span>📍 VIP Road • Pathquary</span>
+                  <a href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-[#f4efe8]/90 font-medium">Locate Us →</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. The Menu Teaser (Customer Favorites) -->
+    <section id="menu" class="py-16 md:py-24 px-4 sm:px-6 bg-[#eee7de]/50 border-y border-[#3e2723]/5">
+      <div class="max-w-6xl mx-auto">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+          <div class="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-widest text-[#3e2723]/70 mb-2">
+            <span>Customer Favorites</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#3e2723] tracking-tight">
+            What We're Pouring
+          </h2>
+          <p class="text-base sm:text-lg text-[#3e2723]/75 mt-3">
+            Handcrafted beverages and bakery gems made fresh each morning. Here are three staples our patrons swear by.
+          </p>
+        </div>
+
+        <!-- 3 Placeholder Cards for Signature Items -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Vietnamese Cold Coffee -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-[#3e2723]/10 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 group" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <!-- Required Image Asset Placeholder Container -->
+              <div class="bg-[#3e2723] w-full h-64 rounded-xl relative overflow-hidden flex flex-col items-center justify-center p-6 text-[#f4efe8] shadow-inner mb-6 group-hover:scale-[1.01] transition-transform duration-300">
+                <!-- Subtle steam graphic inside -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                  <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-3 shadow-md border border-white/20">
+                    <span class="text-3xl animate-steam">🧊</span>
+                  </div>
+                  <span class="text-xs font-semibold tracking-widest uppercase text-[#f4efe8]/70 border border-[#f4efe8]/20 px-3 py-0.5 rounded-full mb-2">Cold Brew Specialty</span>
+                  <p class="font-serif text-xl font-bold tracking-wide text-[#f4efe8]">Vietnamese Brew</p>
+                </div>
+                <span class="absolute bottom-3 right-3 text-[11px] text-[#f4efe8]/50 tracking-wider">#01 SIGNATURE</span>
+              </div>
+
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-serif text-2xl font-bold text-[#3e2723]">
+                  Vietnamese Cold Coffee
+                </h3>
+              </div>
+              <p class="text-sm text-[#3e2723]/80 leading-relaxed font-normal">
+                Rich, smooth, and perfectly balanced. Traditional drip coffee blended over sweetened condensed milk and served crystal cold.
+              </p>
+            </div>
+
+            <div class="pt-5 mt-6 border-t border-[#3e2723]/10 flex items-center justify-between">
+              <span class="text-xs font-semibold tracking-wider text-[#3e2723]/60 uppercase">House Special</span>
+              <a
+                href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-xs font-bold text-[#3e2723] hover:underline"
+              >
+                Try at Cafe →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Signature Cheesecake -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-[#3e2723]/10 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 group" data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <!-- Required Image Asset Placeholder Container -->
+              <div class="bg-[#3e2723] w-full h-64 rounded-xl relative overflow-hidden flex flex-col items-center justify-center p-6 text-[#f4efe8] shadow-inner mb-6 group-hover:scale-[1.01] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                  <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-3 shadow-md border border-white/20">
+                    <span class="text-3xl">🍰</span>
+                  </div>
+                  <span class="text-xs font-semibold tracking-widest uppercase text-[#f4efe8]/70 border border-[#f4efe8]/20 px-3 py-0.5 rounded-full mb-2">Artisanal Patisserie</span>
+                  <p class="font-serif text-xl font-bold tracking-wide text-[#f4efe8]">Baked Daily</p>
+                </div>
+                <span class="absolute bottom-3 right-3 text-[11px] text-[#f4efe8]/50 tracking-wider">#02 DESSERT</span>
+              </div>
+
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-serif text-2xl font-bold text-[#3e2723]">
+                  Signature Cheesecake
+                </h3>
+              </div>
+              <p class="text-sm text-[#3e2723]/80 leading-relaxed font-normal">
+                Super soft, creamy, and melts in your mouth. Not overly sweet, finished with an artisanal buttery crust for the dreamiest spoonful.
+              </p>
+            </div>
+
+            <div class="pt-5 mt-6 border-t border-[#3e2723]/10 flex items-center justify-between">
+              <span class="text-xs font-semibold tracking-wider text-[#3e2723]/60 uppercase">Melt-In-Mouth</span>
+              <a
+                href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-xs font-bold text-[#3e2723] hover:underline"
+              >
+                Try at Cafe →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Korean Cream Cheese Bun -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-[#3e2723]/10 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 group" data-aos="fade-up" data-aos-delay="300">
+            <div>
+              <!-- Required Image Asset Placeholder Container -->
+              <div class="bg-[#3e2723] w-full h-64 rounded-xl relative overflow-hidden flex flex-col items-center justify-center p-6 text-[#f4efe8] shadow-inner mb-6 group-hover:scale-[1.01] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                  <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-3 shadow-md border border-white/20">
+                    <span class="text-3xl">🥐</span>
+                  </div>
+                  <span class="text-xs font-semibold tracking-widest uppercase text-[#f4efe8]/70 border border-[#f4efe8]/20 px-3 py-0.5 rounded-full mb-2">Oven-Warm Bake</span>
+                  <p class="font-serif text-xl font-bold tracking-wide text-[#f4efe8]">Garlic & Cream</p>
+                </div>
+                <span class="absolute bottom-3 right-3 text-[11px] text-[#f4efe8]/50 tracking-wider">#03 BEST PAIRING</span>
+              </div>
+
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-serif text-2xl font-bold text-[#3e2723]">
+                  Korean Cream Cheese Bun
+                </h3>
+              </div>
+              <p class="text-sm text-[#3e2723]/80 leading-relaxed font-normal">
+                Generously stuffed and baked fresh. The ultimate pairing for your hot pour-over or iced espresso with rich savory creaminess.
+              </p>
+            </div>
+
+            <div class="pt-5 mt-6 border-t border-[#3e2723]/10 flex items-center justify-between">
+              <span class="text-xs font-semibold tracking-wider text-[#3e2723]/60 uppercase">Freshly Baked</span>
+              <a
+                href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-xs font-bold text-[#3e2723] hover:underline"
+              >
+                Try at Cafe →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Foot traffic prompt below cards -->
+        <div class="mt-12 text-center" data-aos="fade-up">
+          <p class="text-sm text-[#3e2723]/70 mb-4">Craving these freshly brewed treats right now?</p>
+          <a
+            href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-6 py-3 bg-[#3e2723] text-[#f4efe8] font-semibold text-sm rounded-xl shadow-md hover:bg-[#2a160f] hover:shadow-lg transition-all"
+          >
+            Get Directions to Guwahati Coffee House
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visit & Local SEO Funnel Section -->
+    <section class="py-16 md:py-20 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border border-[#3e2723]/10 shadow-xl" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+          
+          <div class="space-y-4 max-w-lg">
+            <div class="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#3e2723]/70">
+              <span class="w-2 h-2 rounded-full bg-[#3e2723]"></span>
+              <span>Easy To Reach In East Guwahati</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-[#3e2723]">
+              Visit Us on VIP Road
+            </h3>
+            <p class="text-sm sm:text-base text-[#3e2723]/80 leading-relaxed">
+              Located conveniently near Pathquary along VIP Road. Ample parking, calm cozy corners, and welcoming baristas ready to brew your favorite order.
+            </p>
+            <div class="flex items-center space-x-2 text-xs font-medium text-[#3e2723]">
+              <span class="p-1.5 bg-[#f4efe8] rounded-md">📍</span>
+              <span>VIP Road, Near Pathquary, Guwahati, Assam 781171</span>
+            </div>
+          </div>
+
+          <div class="w-full md:w-auto flex flex-col items-center sm:items-start space-y-3">
+            <a
+              href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#3e2723] text-[#f4efe8] font-bold text-base rounded-2xl shadow-xl hover:bg-[#2a160f] hover:shadow-2xl transition-all group"
+            >
+              <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Get Directions
+            </a>
+            <p class="text-xs text-[#3e2723]/60 text-center sm:text-left w-full">
+              Opens directly in Google Maps
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. Footer (Minimalist) -->
+  <footer class="bg-[#3e2723] text-[#f4efe8] pt-14 pb-10 px-4 sm:px-6 mt-auto border-t-4 border-[#2a160f]">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Top Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-white/10">
+        
+        <!-- Left: Brand & Logo -->
+        <div class="md:col-span-4 flex items-center space-x-4">
+          <img
+            src="logo.jpg"
+            alt="Guwahati Coffee House"
+            class="w-14 h-14 rounded-full border border-white/20 shadow-md object-cover"
+          />
+          <div>
+            <h4 class="font-serif text-xl font-bold tracking-tight text-[#f4efe8]">Guwahati Coffee House</h4>
+            <p class="text-xs text-[#f4efe8]/70">Your Quiet Escape on VIP Road</p>
+          </div>
+        </div>
+
+        <!-- Center: Opening Hours -->
+        <div class="md:col-span-5 text-center md:text-left">
+          <p class="text-xs uppercase tracking-widest text-[#f4efe8]/60 font-semibold mb-1.5">Hours of Hospitality</p>
+          <p class="text-sm font-medium text-[#f4efe8]/90 leading-relaxed">
+            Mon: 12 PM - 10 PM | Tue - Sat: 11:30 AM - 10 PM | Sun: 11 AM - 9:30 PM
+          </p>
+        </div>
+
+        <!-- Right: Social & Maps Link -->
+        <div class="md:col-span-3 flex flex-col md:items-end items-center space-y-2">
+          <a
+            href="https://www.instagram.com/guwahaticoffeehouse"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-2 text-sm font-medium text-[#f4efe8] hover:text-white/80 transition-colors py-1 px-3 rounded-lg bg-white/5 hover:bg-white/10"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>@guwahaticoffeehouse</span>
+          </a>
+          <a
+            href="https://maps.app.goo.gl/oXALNp7xKQLDp6JP9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs text-[#f4efe8]/70 hover:text-white underline"
+          >
+            Google Maps Location
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Developer Credit: Bottom center text in dim cream/grey -->
+      <div class="pt-8 text-center text-xs text-[#f4efe8]/50">
+        <p>
+          Built by <a href="https://terrestrialyt.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#f4efe8] underline transition-colors">TerrestrialYT</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Implementation -->
+  <script>
+    // Initialize AOS animation library
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          once: true,
+          duration: 800,
+          easing: 'ease-out-cubic',
+        });
+      }
+    });
+
+    // 3. Minimalist Preloader Removal
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+            preloader.remove();
+          }, 700);
+        }
+      }, 1500);
+    });
+
+    // Fallback if load already happened
+    if (document.readyState === 'complete') {
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => preloader.remove(), 700);
+        }
+      }, 1500);
+    }
+
+    // 4. Interactive Cursor: Floating Coffee Beans
+    document.body.addEventListener('click', (e) => {
+      // Don't trigger if clicked on interactive buttons or links to prevent interference
+      const x = e.clientX;
+      const y = e.clientY;
+
+      for (let i = 0; i < 3; i++) {
+        const bean = document.createElement('div');
+        // Styled as tiny ovals using Tailwind: w-2 h-3 rounded-full bg-[#3e2723]
+        bean.className = 'w-2 h-3 rounded-full bg-[#3e2723] coffee-bean-particle';
+        bean.style.left = `${x - 4}px`;
+        bean.style.top = `${y - 6}px`;
+
+        // Calculate scatter offsets (float upwards slightly, like steam/beans popping)
+        const xShift = (Math.random() - 0.5) * 60 + 'px';
+        const yShift = - (Math.random() * 45 + 30) + 'px'; // upwards
+        const rot = ((Math.random() - 0.5) * 120) + 'deg';
+
+        bean.style.setProperty('--x-shift', xShift);
+        bean.style.setProperty('--y-shift', yShift);
+        bean.style.setProperty('--rot', rot);
+
+        document.body.appendChild(bean);
+
+        // Remove from DOM after 1000ms
+        setTimeout(() => {
+          bean.remove();
+        }, 1000);
+      }
+    });
+  </script>
+
+</body>
+</html>
